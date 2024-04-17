@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="container">
+  <div class="container">
+<h1 id="title">Survey Form</h1>
+<p id="description">Thank you for taking yout time to fill this Survey Form</p>
+    <form id="survey-form">
+  <label id="name-label">name<input id="name" type="text" placeholder="Enter Your Name" required></label>
+  <label id="email-label">email<input placeholder="Enter Your Email" id="email" type="email" required></label>
+  <label id="number-label">number<input placeholder="Your Phone No:" id="number" type="number" min="1" max="10" required></label>
+    <label for="gender">Gender </label>
+<div>
+  <select id="dropdown" select="2">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+  </select>
+  </div>
+  <h3>How was your experience using our service?</h3>
+  <div class="Check">
+      <label>Good<input type="radio" value="experience" name="good" checked></label>
+      <label>Avarage<input type="radio" value="experience" name="excellent"></label>
+      <label>Excellent<input type="radio" value="experience" name="bad"></label>
+         <label>Bad<input type="radio" value="experience" name="avarage"></label>
+         <div class="rate">
+      <label><em>Please rate us:</em></label>
+        <label>from 1 to 5 <input type="checkbox" value="rate-us" checked>
+      <label>from 5 to 10 <input type="checkbox" value="rate-us"></label>
+         </div>
+           <div>
+  <label>Comment(<em>optional</em>)<textarea placeholder="Type Your Comment Here:"></textarea></label>
+  </div>
+  <button type="submit" id="submit" target="survey-form">Submit</button>
+</form>
+</div>
+</body>
